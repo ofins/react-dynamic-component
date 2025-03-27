@@ -50,40 +50,6 @@ yarn start
 
 This will start the development server and open the application in your default browser at `http://localhost:3000`.
 
-## Project Structure
-
-```
-react-dynamic-children/
-├── src/
-│   ├── components/    # Reusable React components
-│   ├── App.js         # Main application component
-│   ├── index.js       # Entry point of the application
-│   └── ...            # Other files
-├── public/            # Static assets
-├── package.json       # Project metadata and dependencies
-└── README.md          # Project documentation
-```
-
-## Usage
-
-1. Modify the `src/components` directory to add or update child components.
-2. Use the parent component in `App.js` to dynamically render children based on your requirements.
-
-Example:
-
-```jsx
-import React from "react";
-import ChildComponent from "./components/ChildComponent";
-
-function App() {
-  const children = [<ChildComponent key={1} />, <ChildComponent key={2} />];
-
-  return <div>{children}</div>;
-}
-
-export default App;
-```
-
 ## Building for Production
 
 To create a production build, run:
@@ -97,13 +63,3 @@ Or using yarn:
 ```bash
 yarn build
 ```
-
-The optimized build will be available in the `build/` directory.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
